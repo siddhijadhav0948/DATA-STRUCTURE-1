@@ -1,0 +1,39 @@
+DATA STRUCTURE 1 
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+int id1, id2, id3;
+string title1, title2, title3;
+
+//Book1
+
+cout<<"Enter Book ID:";
+cin>>id1;
+
+cin.ignore();
+cout<<"Enter book1 title:";
+getline(cin, title1);
+
+//Book3
+cout<<"Enter Book3 ID:";
+cin>>id3;
+
+cin.ignore();
+cout<<"Enter Book3 Title";
+getline(cin, title3);
+
+//DISPLAY
+
+cout<<"\n LIBRARY BOOKS";
+
+cout<<"\n Book ID:"<< idl;
+cout<<"\n Book Title:"<< title2;
+
+cout<<"\n Book ID:"<< id3;
+cout<<"\n Book Title:"<< title3;
+
+return 0;
+}
