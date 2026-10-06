@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+    stack<int> servedCustomers;
+    int token;
+
+    // Store 5 served token numbers
+    cout << "Enter 5 recently served customer token numbers:" << endl;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> token;
+        servedCustomers.push(token);
+    }
+
+    // Display from most recently served customer
+    cout << "\nRecently served customers (most recent first):" << endl;
+
+    while (!servedCustomers.empty()) {
+        cout << "Customer with token: "
+             << servedCustomers.top() << endl;
+
+        servedCustomers.pop();
+    }
+
+    return 0;
+}
